@@ -146,6 +146,8 @@ a{
   text-align: center;
   padding: 50px 0;
   font-size: 30px;
+  text-align: left;
+  padding-left: 15px;
 }
 
 .left-banner {
@@ -191,8 +193,17 @@ line-height: 1.1;
 .right-bottom-banner a {
   color: white;
 }
-
-
+.author{
+	display: flex;
+	align-items: baseline;
+}
+.right-top-banner i{
+	display: inline-block;
+    color: bisque;
+    /* border: 1px solid black; */
+    font-size: 19px;
+    padding: 0px 10px 10px 10px;
+}
 
 
 
