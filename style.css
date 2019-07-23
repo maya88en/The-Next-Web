@@ -78,7 +78,6 @@ table {
 
   *{
 	  box-sizing: border-box;
-	  padding: 400px;
   }
 a{
 	text-decoration: none;
@@ -126,3 +125,41 @@ a{
 	text-transform: uppercase;
 }
 /*====== END nav ======*/
+
+/*======START main======*/
+.left-banner{ grid-area: menu; }
+.right-top-banner { grid-area: main; }
+.right-bottom-banner { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'menu menu main'
+    'menu menu footer';
+  grid-gap: 10px;
+  background-color: rgb(243, 233, 233);
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 100px 0;
+  font-size: 30px;
+}
+
+.left-banner {
+    background: url(../The-Next-Web/img/Child.jpg) no-repeat;
+    background-image: linear-gradient(bottom right red black);
+    background-size: 100% 100%;
+    z-index: 2; 
+}
+
+.img-gradient {
+  background-color: red;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+
+/*======END main======*/
