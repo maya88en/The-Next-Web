@@ -149,17 +149,16 @@ a{
 }
 
 .left-banner {
-    background: url(../The-Next-Web/img/Child.jpg) no-repeat;
-    background-image: linear-gradient(bottom right red black);
-    background-size: 100% 100%;
-    z-index: 2; 
+    background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(../The-Next-Web/img/Child.jpg);
+    background-size: cover;
+    min-height: 400px;
 }
-
+/*
 .img-gradient {
   background-color: red;
   opacity: 0.3;
   z-index: 1;
 }
 
-
+*/
 /*======END main======*/
