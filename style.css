@@ -3,133 +3,287 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /*=======END OF reset Styles========*/
 
 /*======= general =======*/
 .row:after {
-	width: 100%;
-	content: "";
-	clear: both;
-	display: table;
-  }
-  
-  [class*="col-"] {
-	float: left;
-	padding: 15px;
-	border: 1px solid red;
-  }
-  
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-
-  *{
-	  box-sizing: border-box;
-  }
-a{
-	text-decoration: none;
-	display: inline-flex;
+  width: 100%;
+  content: "";
+  clear: both;
+  display: table;
 }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-flex;
+}
+
 /*====== END general =======*/
 
+/*====== media =========*/
+
+@media (min-width: 1024px) {
+  .popular {
+    margin: 20px 5px 20px 5px;
+    padding: 10px 80px 12px 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  [class*=u-col-] {
+    padding: 12px;
+  }
+}
+
 /*====== nav =========*/
-.top-menu{
-	width: 100%;
-    background: #131313;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+.top-menu {
+  width: 100%;
+  background: #131313;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-.header-menu{
-	display: flex;
-	color: aliceblue;
-	justify-content: flex-start;
+
+.header-menu {
+  display: flex;
+  color: aliceblue;
+  justify-content: flex-start;
 }
-.header-menu a{
-	color: #aaa;
-    padding: 0px 15px;
-	position: relative;
+
+.header-menu a {
+  color: #aaa;
+  padding: 0px 15px;
+  position: relative;
 }
-.submenu a{
-	position: absolute;
-	width: 200px;
-	visibility: hidden;
-	opacity: 0;
-	background: #131313;
-	text-align: center;
-	top: 50%;
-	padding: 15px 0;
+
+.submenu a {
+  position: absolute;
+  width: 200px;
+  visibility: hidden;
+  opacity: 0;
+  background: #131313;
+  text-align: center;
+  top: 50%;
+  padding: 15px 0;
 }
-.submenu li>a:hover{
-	opacity: 1;
-	transition: all .5s ease;
+
+.submenu li>a:hover {
+  opacity: 1;
+  transition: all .5s ease;
 }
-.header-menu li{
-	float: left;
-	
+
+.header-menu li {
+  float: left;
+
 }
-.fixed{
-	text-transform: uppercase;
+
+.fixed {
+  text-transform: uppercase;
 }
+
 /*====== END nav ======*/
 
 /*======START main======*/
-.left-banner{ grid-area: menu; }
-.right-top-banner { grid-area: main; }
-.right-bottom-banner { grid-area: footer; }
+.left-banner {
+  grid-area: menu;
+}
+
+.right-top-banner {
+  grid-area: main;
+}
+
+.right-bottom-banner {
+  grid-area: footer;
+}
 
 .grid-container {
   display: grid;
@@ -141,7 +295,7 @@ a{
   padding: 10px;
 }
 
-.grid-container > div {
+.grid-container>div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
   padding: 50px 0;
@@ -151,10 +305,11 @@ a{
 }
 
 .left-banner {
-    background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(../The-Next-Web/img/Child.jpg);
-    background-size: cover;
-    min-height: 400px;
+  background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(../The-Next-Web/img/Child.jpg);
+  background-size: cover;
+  min-height: 400px;
 }
+
 /*
 .img-gradient {
   background-color: red;
@@ -164,19 +319,19 @@ a{
 */
 
 .right-top-banner {
-background: linear-gradient(rgba(83, 65, 71, 0.8), rgba(30, 30, 31, 0.5)), url(../The-Next-Web/img/Crime-Scene.png);
-background-size: cover;
-font-family: Avalon,sans-serif;
-font-weight: 700;
-line-height: 1.1;
+  background: linear-gradient(rgba(83, 65, 71, 0.8), rgba(30, 30, 31, 0.5)), url(../The-Next-Web/img/Crime-Scene.png);
+  background-size: cover;
+  font-family: Avalon, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
 .right-top-banner a {
-  color: white; 
+  color: white;
   font-size: 22px;
 }
 
-.author a, 
+.author a,
 .icon {
   font-size: 12px;
   color: white;
@@ -185,7 +340,7 @@ line-height: 1.1;
 .right-bottom-banner {
   background: linear-gradient(rgba(55, 9, 219, 0.8), rgba(30, 30, 31, 0.5)), url(../The-Next-Web/img/zuckerberg.jpg);
   background-size: cover;
-  font-family: Avalon,sans-serif;
+  font-family: Avalon, sans-serif;
   font-weight: 700;
   line-height: 1.1;
 }
@@ -193,17 +348,20 @@ line-height: 1.1;
 .right-bottom-banner a {
   color: white;
 }
-.author{
-	display: flex;
-	align-items: baseline;
+
+.author {
+  display: flex;
+  align-items: baseline;
 }
-.right-top-banner i{
-	display: inline-block;
-    color: bisque;
-    /* border: 1px solid black; */
-    font-size: 19px;
-    padding: 0px 10px 10px 10px;
+
+.right-top-banner i {
+  display: inline-block;
+  color: bisque;
+  /* border: 1px solid black; */
+  font-size: 19px;
+  padding: 0px 10px 10px 10px;
 }
+
 /*=====START middle======*/
 
 .middle {
@@ -242,7 +400,7 @@ line-height: 1.1;
   padding: 10px 80px 12px 80px;
 }
 
-.news img{
+.news img {
   width: 280px;
   height: 150px;
   display: block;
@@ -251,7 +409,7 @@ line-height: 1.1;
 
 .news h2 {
   line-height: 20px;
-  
+
 }
 
 .news a {
@@ -284,15 +442,20 @@ line-height: 1.1;
   list-style-type: none;
   display: inline;
 }
+
 /*=====END middle======*/
 
 
 /*==== START latest funding ====*/
-.header-of-banner{
+.latest-funding{
+  padding: 15px
+}
+.header-of-banner {
   position: relative;
   display: block;
 }
-.header-of-banner img{
+
+.header-of-banner img {
   width: 60px;
   min-height: 60px;
   position: absolute;
@@ -302,12 +465,50 @@ line-height: 1.1;
   margin: 10px;
 }
 
-.red-bg{
+.red-bg {
   background-color: #f42;
   color: #fff;
-  font-size: 18px;
+  font-size: 25px;
   padding: 10px 20px 10px 84px;
   font-weight: 700;
+}
+.row-funding ul{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.red-font-style a{
+  color: #f42;
+  font-size: 20px;
+}
+.red-font-style a:hover{
+  color: #131313;
+}
+.bold-style {
+  color: #f42;
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 15px;
+}
+.header-of-banner h3 {
+  padding-left: 84px;
+    font-weight: bold;
+    font-size: 20px;
+    background: rgba(255,68,34,.08);
+}
+.header-of-banner h5{
+  text-transform: uppercase;
+  color: #aaa;
+  font-size: 18px;
+  background: rgba(255,68,34,.08);
+  padding: 5px 0 5px 84px;
+}
+.description a{
+  padding-right: 20px;
+  color: #131313;
+}
+.description i{
+  margin-right: 30px;
 }
 /*==== END latest funding ====*/
 
@@ -320,7 +521,7 @@ line-height: 1.1;
 }
 
 .popular {
-  padding: 10px 80px 12px 80px; 
+  padding: 10px 80px 12px 80px;
   margin: 20px 20px 20px 20px;
 }
 
@@ -334,9 +535,9 @@ line-height: 1.1;
   padding-block-start: 100px;
 }
 
-.popular h5{
-text-transform: uppercase;
-font-size: white;
+.popular h5 {
+  text-transform: uppercase;
+  font-size: white;
 }
 
 .popular a {
@@ -345,7 +546,7 @@ font-size: white;
 
 .popular h3 {
   font-size: 20px;
-  font-family: Shentox,sans-serif;
+  font-family: Shentox, sans-serif;
   font-weight: 500;
   letter-spacing: .04em;
   line-height: 1.5;
