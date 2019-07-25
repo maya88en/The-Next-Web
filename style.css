@@ -517,7 +517,7 @@ a {
   display: block;
   background: rgb(230, 223, 223);
   border: 1px solid brown;
-  padding-inline-start: 10px;
+  padding-inline-start: 60px;
 }
 
 .popular {
@@ -526,36 +526,65 @@ a {
 }
 
 .popular {
-  background: url("../The-Next-Web/img/soundcore.jpg");
-  background-size: 100% 100%;
-  width: 400px;
-  height: 300px;
-  display: block;
+  background: linear-gradient(rgba(51, 28, 107, 0.8), rgb(12, 11, 11)), url("../The-Next-Web/img/soundcore.jpg");
+  background-size: cover;
+  width: 368px;
+  height: 279px;
   padding-right: 30px;
-  padding-block-start: 100px;
+  padding-left: 14px;
+  padding-block-start: 160px;
 }
 
 .popular h5 {
+  color: white;
+  font-size: 12px;
+  font-family: Shentox,sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
-  font-size: white;
+  letter-spacing: .04em;
+  line-height: 1.5;
 }
 
 .popular a {
   color: white;
 }
 
+.popular a:hover {
+  text-decoration-line: underline;
+}
+
 .popular h3 {
   font-size: 20px;
-  font-family: Shentox, sans-serif;
-  font-weight: 500;
+  font-family: Helvetica, Arial,sans-serif;
+  font-weight: 700;
   letter-spacing: .04em;
-  line-height: 1.5;
+  margin-bottom: 6px;
+  line-height: 1.1;
+  margin-top: 6px;
 }
 
 .popular h1 {
-  font-size: 15px;
+  font-size: 12px;
+  color: hsla(0,0%,100%,.6);
+  line-height: 16px;
+  margin-top: 5px;
+  font-weight: 700;
 }
 
+.latest-popular {
+  display: block;
+  background: rgb(230, 223, 223);
+  border: 1px solid brown;
+}
+
+.latest-popular-news {
+  padding: 10px 80px 12px 80px;
+  margin: -21px 19px 20px 20px;
+  background: linear-gradient(rgba(116, 138, 35, 0.8), rgb(12, 11, 11)), url("../The-Next-Web/img/soundcore.jpg");
+  background-size: cover;
+  width: 368px;
+  height: 100px;
+}
 
 
 
