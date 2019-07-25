@@ -517,7 +517,7 @@ a {
   display: block;
   background: rgb(230, 223, 223);
   border: 1px solid brown;
-  padding-inline-start: 60px;
+  /*padding-inline-start: 60px;*/
 }
 
 .popular {
