@@ -211,7 +211,7 @@ a {
 
 /*====== media =========*/
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   .popular {
     margin: 20px 5px 20px 5px;
     padding: 10px 80px 12px 80px;
@@ -225,12 +225,14 @@ a {
 }
 
 /*====== nav =========*/
+
 .top-menu {
   width: 100%;
   background: #131313;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding: 5px;
 }
 
 .header-menu {
@@ -265,9 +267,18 @@ a {
   float: left;
 
 }
+.border-left-i{
+  width: 50px;
+  color: #aaa;
+  border-left: 1px solid #aaa;
+  padding-left: 40px;
+  font-size: 20px;
+}
 
 .fixed {
   text-transform: uppercase;
+  /*position: fixed;
+  top: 50px;*/
 }
 
 /*====== END nav ======*/
@@ -396,12 +407,13 @@ a {
   font-family: Avalon, sans-serif;
 }
 
-.news {
-  padding: 10px 80px 12px 80px;
+.news,
+.new {
+  padding: 10px 30px 12px 30px;
 }
 
 .news img {
-  width: 280px;
+  width: 300px;
   height: 150px;
   display: block;
   padding-right: 30px;
@@ -504,11 +516,14 @@ a {
   padding: 5px 0 5px 84px;
 }
 .description a{
-  padding-right: 20px;
+  padding: 8px;
   color: #131313;
 }
 .description i{
   margin-right: 30px;
+}
+.grey-color{
+  color: #aaa;
 }
 /*==== END latest funding ====*/
 
@@ -516,7 +531,7 @@ a {
 .most-popular {
   display: block;
   border: 1px solid brown;
-  padding-inline-start: 60px;
+  /*padding-inline-start: 60px;*/
 }
 
 .popular {
@@ -583,6 +598,7 @@ a {
   display: block;
   padding-right: 30px;
   padding-left: 14px;
+  position: relative;
 }
 
 .background-image {
@@ -592,8 +608,8 @@ a {
   background-size: cover;
   background-position: 50%;
   position: absolute; 
-  position: right;
-  display: flex;
+  bottom: 0;
+  right: 0;
 }
 
 
@@ -615,7 +631,7 @@ a {
   font-weight: 700;
   letter-spacing: .04em;
   line-height: 1.25;
-  margin-top: 11px;
+  margin: 11px 93px 0 0;
   font-size: 15px;
 }
 
@@ -627,6 +643,9 @@ a {
   padding-right: 63px;
   padding-left: 0px;
 } 
+.list{
+  padding-left: 20px;
+}
 
 .list li::before {
   content: "•";
@@ -642,19 +661,61 @@ a {
   font-size: 14px;
 }
 
-
-
-
-
-
-
-
-
 /*======END popular======*/
 
+/*=====START latest deals =====*/
 
 
 
 
 
 /*======END main======*/
+
+/*==== START footer =====*/
+.footer-top{
+  padding-top: 10px;
+  background: #131313;
+}
+
+.social,
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+}
+.social a{
+  justify-content: center;
+  color: white;
+  width: 40px;
+  min-height: 40px;
+  background: rgba(238, 239, 239, 0.2);
+  border-radius: 50%;
+}
+.social a:hover{
+  background: transparent;
+  border: 2px solid rgba(238, 239, 239, 0.4);
+}
+.social i{
+  margin: auto;
+}
+.footer-link a{
+  text-transform: uppercase;
+  color: #aaa;
+}
+.footer-link a:hover{
+  color: #fff;
+}
+
+.footer-bottom{
+  background: #000;
+}
+.copyright img{
+  width: 59px;
+  min-height: 10px;
+}
+.copyright{
+  padding: 40px 0 40px 0;
+  color: #aaa;
+  display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
