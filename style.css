@@ -147,7 +147,7 @@ table {
 [class*="col-"] {
   float: left;
   padding: 15px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
 .col-1 {
@@ -515,9 +515,8 @@ a {
 /*=====START popular=====*/
 .most-popular {
   display: block;
-  background: rgb(230, 223, 223);
   border: 1px solid brown;
-  /*padding-inline-start: 60px;*/
+  padding-inline-start: 60px;
 }
 
 .popular {
@@ -529,10 +528,10 @@ a {
   background: linear-gradient(rgba(51, 28, 107, 0.8), rgb(12, 11, 11)), url("../The-Next-Web/img/soundcore.jpg");
   background-size: cover;
   width: 368px;
-  height: 279px;
+  height: 268px;
   padding-right: 30px;
   padding-left: 14px;
-  padding-block-start: 160px;
+  padding-block-start: 123px;
 }
 
 .popular h5 {
@@ -573,17 +572,74 @@ a {
 
 .latest-popular {
   display: block;
-  background: rgb(230, 223, 223);
-  border: 1px solid brown;
 }
 
 .latest-popular-news {
   padding: 10px 80px 12px 80px;
   margin: -21px 19px 20px 20px;
-  background: linear-gradient(rgba(116, 138, 35, 0.8), rgb(12, 11, 11)), url("../The-Next-Web/img/soundcore.jpg");
-  background-size: cover;
+  background-color: rgb(250, 225, 229);
   width: 368px;
   height: 100px;
+  display: block;
+  padding-right: 30px;
+  padding-left: 14px;
+}
+
+.background-image {
+  background-image: url("../The-Next-Web/img/lock.jpg");
+  height: 96px;
+  width: 96px;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute; 
+  position: right;
+  display: flex;
+}
+
+
+.latest-popular-news h1 {
+  color: #f42;
+  font-size: 13px;
+}
+
+.latest-popular-news a {
+  color: #f42;
+}
+
+.latest-popular-news a:hover {
+  text-decoration: underline;
+}
+
+.latest-popular-news h2 {
+  font-family: Helvetica, Arial,sans-serif;
+  font-weight: 700;
+  letter-spacing: .04em;
+  line-height: 1.25;
+  margin-top: 11px;
+  font-size: 15px;
+}
+
+.popular-news-list {
+  display: block;
+  padding-inline-start: 60px;
+  padding: 10px 80px 12px 80px;
+  margin: -21px 19px 20px 20px;
+  padding-right: 63px;
+  padding-left: 0px;
+} 
+
+.list li::before {
+  content: "•";
+  margin-right: 0.5em;
+  color: red;
+  font-size: 20px;
+}
+
+.list li {
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: Helvetica, Arial,sans-serif;
+  font-size: 14px;
 }
 
 
