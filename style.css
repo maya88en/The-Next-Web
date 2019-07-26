@@ -316,11 +316,58 @@ a {
 }
 
 .left-banner {
-  background: linear-gradient(45deg, rgba(103, 0, 31, .8), rgba(34, 101, 163, .5)), url(../The-Next-Web/img/Child.jpg);
+  background: linear-gradient(90deg, rgba(245, 14, 6, 0.945), rgba(5, 78, 21, 0.877)), url(../The-Next-Web/img/payments.jpg);
   background-size: cover;
-  min-height: 400px;
+  width: 950px;
+  height: 419px;
+  position: relative;
 }
 
+.background-image-first {
+  background-image: url("../The-Next-Web/img/Tnw\ logo2.jpg");
+  height: 160px;
+  width: 507px;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute; 
+  Top: 0;
+  left: 0;
+  mix-blend-mode: lighten;
+}
+
+.left-banner a {
+  color: white;
+}
+ 
+.left-banner h1 {
+  font-size: 15px;
+  padding-left: 16px;
+  padding-block-start: 125px;
+  line-height: 1.7;
+  font-family: sans-serif;
+}
+
+
+.left-banner h2 {
+  font-size: 56px;
+  padding-left: 14px;
+  font-weight: 900;
+  font-family: sans-serif;
+}
+
+.left-banner li {
+  display: inline-block;
+  font-size: 13px;
+  padding-left: 1px;
+  color: white;
+}
+
+.img-gradient i {
+  display: inline-block;
+  color: bisque;
+  font-size: 19px;
+  padding: 0px 10px 10px 10px;
+}
 /*
 .img-gradient {
   background-color: red;
@@ -332,14 +379,22 @@ a {
 .right-top-banner {
   background: linear-gradient(rgba(83, 65, 71, 0.8), rgba(30, 30, 31, 0.5)), url(../The-Next-Web/img/Crime-Scene.png);
   background-size: cover;
-  font-family: Avalon, sans-serif;
+  font-family: sans-serif;
   font-weight: 700;
   line-height: 1.1;
+  width: 500px;
+  height: 200px;
 }
 
 .right-top-banner a {
   color: white;
-  font-size: 22px;
+}
+
+.right-top-banner h5,
+.right-bottom-banner h5 {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 3px;
 }
 
 .author a,
@@ -354,12 +409,19 @@ a {
   font-family: Avalon, sans-serif;
   font-weight: 700;
   line-height: 1.1;
+  width: 500px;
+  height: 200px;
 }
 
 .right-bottom-banner a {
   color: white;
 }
 
+.right-top-banner li,
+.right-bottom-banner li {
+  line-height: 1.7;
+  margin-top: 5px;
+}
 .author {
   display: flex;
   align-items: baseline;
@@ -377,8 +439,8 @@ a {
 
 .middle {
   display: block;
-  background: rgb(230, 223, 223);
-  border: 1px solid brown;
+  /*background: rgb(230, 223, 223);
+  border: 1px solid brown;*/
 }
 
 .latest {
@@ -528,19 +590,58 @@ a {
 /*==== END latest funding ====*/
 
 /*=====START popular=====*/
-.most-popular {
-  display: block;
-  border: 1px solid brown;
-  /*padding-inline-start: 60px;*/
+.titles {
+  padding: 0px 0px 0px 80px;
+  margin: 0px 10px 0px -55px;
 }
 
-.popular {
+.titles-two {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 10px 0px -35px;
+}
+
+.titles-three {
+  padding: 0px 0px 0px 0px;
+  margin: 0px 10px 0px -37px;
+}
+
+.title-style {
+  color: #f42;
+  font-size: 23px;
+  font-weight: 900;
+  margin-left: 60px;
+  font-family: sans-serif;
+}
+
+.titles i,
+.titles-two i,
+.titles-three i {
+  margin-right: 6px;
+  color:  #f42;
+  padding-right: 4px;
+  font-size: 20px;
+}
+
+.most-popular {
+  display: block;
+  /*border: 1px solid brown;*/
+  /*padding-inline-start: 60px;*/
+  margin-left: 60px;
+}
+
+.popular,
+.popular-two {
+  padding: 10px 80px 12px 80px;
+  margin: 20px 20px 20px 20px;
+}
+
+.popular-three {
   padding: 10px 80px 12px 80px;
   margin: 20px 20px 20px 20px;
 }
 
 .popular {
-  background: linear-gradient(rgba(51, 28, 107, 0.8), rgb(12, 11, 11)), url("../The-Next-Web/img/soundcore.jpg");
+  background: url("../The-Next-Web/img/soundcore.jpg");
   background-size: cover;
   width: 368px;
   height: 268px;
@@ -549,7 +650,31 @@ a {
   padding-block-start: 123px;
 }
 
-.popular h5 {
+.popular-two {
+  background: url("../The-Next-Web/img/WhatsApp.jpg");
+  background-size: cover;
+  width: 368px;
+  height: 268px;
+  padding-right: 30px;
+  padding-left: 14px;
+  padding-block-start: 123px;
+}
+
+.popular-three {
+  background:  url("../The-Next-Web/img/deliveroo.jpg"), url("../The-Next-Web/img/deliveroo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat, no-repeat;
+  background-origin: right, left;
+  width: 368px;
+  height: 268px;
+  padding-right: 30px;
+  padding-left: 14px;
+  padding-block-start: 123px;
+}
+
+.popular h5,
+.popular-two h5,
+.popular-three h5 {
   color: white;
   font-size: 12px;
   font-family: Shentox,sans-serif;
@@ -559,15 +684,21 @@ a {
   line-height: 1.5;
 }
 
-.popular a {
+.popular a,
+.popular-two a,
+.popular-three a {
   color: white;
 }
 
-.popular a:hover {
+.popular a:hover,
+.popular-two a:hover,
+.popular-three a:hover {
   text-decoration-line: underline;
 }
 
-.popular h3 {
+.popular h3,
+.popular-two h3,
+.popular-three h3 {
   font-size: 20px;
   font-family: Helvetica, Arial,sans-serif;
   font-weight: 700;
@@ -577,7 +708,9 @@ a {
   margin-top: 6px;
 }
 
-.popular h1 {
+.popular h1,
+.popular-two h1,
+.popular-three h1 {
   font-size: 12px;
   color: hsla(0,0%,100%,.6);
   line-height: 16px;
@@ -612,6 +745,28 @@ a {
   right: 0;
 }
 
+.background-image-two {
+  background-image: url("../The-Next-Web/img/apple-mobile.jpg");
+  height: 96px;
+  width: 96px;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+}
+
+.background-image-three {
+  background-image: url("../The-Next-Web/img/moralbehavior.png");
+  height: 96px;
+  width: 96px;
+  background-size: cover;
+  background-position: 50%;
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+}
+
 
 .latest-popular-news h1 {
   color: #f42;
@@ -628,10 +783,10 @@ a {
 
 .latest-popular-news h2 {
   font-family: Helvetica, Arial,sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: .04em;
   line-height: 1.25;
-  margin: 11px 93px 0 0;
+  margin: 5px 93px 0 0;
   font-size: 15px;
 }
 
